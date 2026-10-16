@@ -1,0 +1,10 @@
+.pg__banner { background: var(--navy-deep); color: #fff; padding: 84px 0 56px; position: relative; overflow: hidden; }
+.pg__banner::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px); background-size: 48px 48px; mask-image: linear-gradient(90deg, transparent, #000); animation: grid-pan 30s linear infinite; }
+.pg__banner::after { content: ""; position: absolute; right: -8%; top: -40%; width: 40%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, rgba(200,16,46,0.4), transparent 60%); }
+.pg__crumbs { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--gold-light); margin-bottom: 14px; }
+.pg__crumbs a:hover { color: #fff; }
+.pg__title { font: 800 clamp(28px, 4vw, 44px)/1.25 var(--font-te); position: relative; max-width: 900px; }
+.pg__body { max-width: 860px; }
+.pg__article p { font-size: 17px; line-height: 1.9; color: var(--ink-soft); margin-bottom: 20px; }
+.pg__meta { font-size: 13px !important; font-weight: 700; color: var(--red) !important; text-transform: uppercase; letter-spacing: 0.06em; }
+.pg__placeholder { font-weight: 600; color: var(--muted); background: var(--bg-alt); border: 1px dashed var(--line); border-radius: var(--radius-sm); padding: 24px; }
