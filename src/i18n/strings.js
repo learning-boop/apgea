@@ -148,6 +148,15 @@ const en = {
   'hc.s2': 'Government Orders',
   'hc.s3': 'News & Updates',
   'hc.s4': 'Events & Programs',
+  'up.all': 'All',
+  'up.news': 'News',
+  'up.lead': 'Lead story',
+  'up.watch': 'Play video',
+  'up.close': 'Close video',
+  'up.vid': "Message from the State President",
+  'up.soon': 'More updates coming soon.',
+  'up.read': 'min read',
+  'up.pdf': 'Download PDF',
   'wa.label': 'Chat with APGEA on WhatsApp',
 }
 
@@ -299,6 +308,15 @@ const te = {
   'hc.s2': 'ప్రభుత్వ ఉత్తర్వులు',
   'hc.s3': 'వార్తలు & అప్‌డేట్స్',
   'hc.s4': 'కార్యక్రమాలు',
+  'up.all': 'అన్నీ',
+  'up.news': 'వార్తలు',
+  'up.lead': 'ప్రధాన వార్త',
+  'up.watch': 'వీడియో చూడండి',
+  'up.close': 'వీడియో మూసివేయండి',
+  'up.vid': 'రాష్ట్ర అధ్యక్షుల సందేశం',
+  'up.soon': 'మరిన్ని అప్‌డేట్స్ త్వరలో.',
+  'up.read': 'నిమిషాల పఠనం',
+  'up.pdf': 'PDF డౌన్‌లోడ్',
   'wa.label': 'వాట్సాప్‌లో APGEA తో మాట్లాడండి',
 }
 

@@ -4,10 +4,10 @@ import Emblem from './Emblem'
 
 /**
  * <img> that never shows broken: it tries `src`, then the photo's original on apgea.org (photoFallbacks),
- * then swaps to a branded placeholder (navy + seal watermark).
+ * then an optional `fallback` image, then swaps to a branded placeholder (navy + seal watermark).
  */
-export default function SafeImg({ src, alt = '', className = '', ...rest }) {
-  const sources = [src, photoFallbacks[src]].filter(Boolean)
+export default function SafeImg({ src, fallback, alt = '', className = '', ...rest }) {
+  const sources = [src, photoFallbacks[src], fallback].filter(Boolean)
   const [step, setStep] = useState(0)
   useEffect(() => { setStep(0) }, [src])
 
