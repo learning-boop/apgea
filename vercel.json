@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/((?!assets/|brand/|bearers/|hero/|gallery/|news/|favicon|apple-touch-icon).*)", "destination": "/index.html" }
+  ]
+}
