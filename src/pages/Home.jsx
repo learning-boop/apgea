@@ -1,4 +1,5 @@
 import Hero from '../components/Hero'
+import VideoFeature from '../components/VideoFeature'
 import Desk from '../components/Desk'
 import Updates from '../components/Updates'
 import Story from '../components/Story'
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <VideoFeature />
       <Desk />
       <Updates />
       <Story />

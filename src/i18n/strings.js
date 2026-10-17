@@ -157,6 +157,11 @@ const en = {
   'up.soon': 'More updates coming soon.',
   'up.read': 'min read',
   'up.pdf': 'Download PDF',
+  'vf.eyebrow': 'Watch',
+  'vf.title': 'APGEA in action',
+  'vf.lede': 'Hear from the association directly — our work for the rights and welfare of every government employee.',
+  'vf.sound': 'Playing muted — tap the speaker in the player for sound',
+  'vf.youtube': 'Watch on YouTube',
   'wa.label': 'Chat with APGEA on WhatsApp',
 }
 
@@ -317,6 +322,11 @@ const te = {
   'up.soon': 'మరిన్ని అప్‌డేట్స్ త్వరలో.',
   'up.read': 'నిమిషాల పఠనం',
   'up.pdf': 'PDF డౌన్‌లోడ్',
+  'vf.eyebrow': 'వీడియో',
+  'vf.title': 'కార్యాచరణలో APGEA',
+  'vf.lede': 'ప్రతి ప్రభుత్వ ఉద్యోగి హక్కులు, సంక్షేమం కోసం మా కృషిని నేరుగా చూడండి.',
+  'vf.sound': 'శబ్దం లేకుండా ప్లే అవుతోంది — శబ్దం కోసం ప్లేయర్‌లో స్పీకర్ నొక్కండి',
+  'vf.youtube': 'యూట్యూబ్‌లో చూడండి',
   'wa.label': 'వాట్సాప్‌లో APGEA తో మాట్లాడండి',
 }
 
