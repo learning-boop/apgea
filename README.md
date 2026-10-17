@@ -31,7 +31,14 @@ src/
     Join.jsx             ← membership CTA, affiliated associations, service links
     Emblem.jsx           ← official logo (public/brand/apgea-logo.webp); `mono` = line-art SVG for watermarks
     Footer.jsx, Intro.jsx, LangToggle.jsx, SafeImg.jsx, WhatsAppFab.jsx
-  pages/Home.jsx, Page.jsx
+  pages/
+    Home.jsx             ← the home page sections
+    PageShell.jsx        ← inner-page banner + breadcrumb (+ <Reveal> helper); pages.css holds shared inner-page styles
+    About, Bearers, Affiliated, Activities, Services (+ RTI guide), Gallery (lightbox + videos), Downloads,
+    Weblinks, News (search + archive), Article, Contact (map + form), Enroll, Grievance, Suggestions, Login, NotFound
+    forms.jsx            ← form fields, validation and delivery. Until the backend exists, forms open WhatsApp
+                           to the office number with every field filled in; swap deliver logic in useWaForm for an API call later.
+  i18n/pageStrings.js    ← Telugu/English text for the inner pages
 ```
 
 ## Before launch — replace placeholders

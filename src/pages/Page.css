@@ -8,3 +8,9 @@
 .pg__article p { font-size: 17px; line-height: 1.9; color: var(--ink-soft); margin-bottom: 20px; }
 .pg__meta { font-size: 13px !important; font-weight: 700; color: var(--red) !important; text-transform: uppercase; letter-spacing: 0.06em; }
 .pg__placeholder { font-weight: 600; color: var(--muted); background: var(--bg-alt); border: 1px dashed var(--line); border-radius: var(--radius-sm); padding: 24px; }
+.pg__banner .container { position: relative; z-index: 1; }
+.pg__seal { position: absolute; right: -90px; top: 50%; translate: 0 -50%; color: var(--gold-light); opacity: .07; pointer-events: none; }
+.pg__crumbs { flex-wrap: wrap; }
+.pg__crumb { display: inline-flex; align-items: center; gap: 8px; }
+.pg__lede { position: relative; margin-top: 14px; max-width: 720px; font-size: 18px; line-height: 1.7; color: #C9CFDC; }
+@media (max-width: 560px) { .pg__lede { font-size: 16px; } .pg__seal { display: none; } }

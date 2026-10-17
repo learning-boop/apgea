@@ -48,6 +48,7 @@ export const nav = [
     label: { en: 'Employees Services', te: 'ఉద్యోగుల సేవలు' }, to: '/services',
     children: [
       { label: { en: 'Employees Services', te: 'ఉద్యోగుల సేవలు' }, desc: { en: 'GOs, forms and help for members', te: 'జీవోలు, ఫారాలు, సభ్యులకు సహాయం' }, to: '/services' },
+      { label: { en: 'Raise a Grievance', te: 'ఫిర్యాదు చేయండి' }, desc: { en: 'Send a pending service matter to the state committee', te: 'పెండింగ్ సర్వీసు విషయం రాష్ట్ర కార్యవర్గానికి' }, to: '/grievance' },
       { label: { en: 'RTI & Citizen Services', te: 'సమాచార హక్కు & పౌర సేవలు' }, desc: { en: 'RTI applications and formats', te: 'సమాచార హక్కు దరఖాస్తులు, నమూనాలు' }, to: '/services#rti' },
     ],
   },

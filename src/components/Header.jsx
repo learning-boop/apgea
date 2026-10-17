@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion'
 import {
-  ArrowRight, Briefcase, Building2, ChevronDown, Eye, HeartHandshake, Info, LogIn, Mail, Menu, Phone, ShieldCheck, Target, X,
+  AlertCircle, ArrowRight, Briefcase, Building2, ChevronDown, Eye, HeartHandshake, Info, LogIn, Mail, Menu, Phone, ShieldCheck, Target, X,
 } from 'lucide-react'
 import { org, nav, news } from '../data/content'
 import { useLang } from '../i18n/LangContext'
@@ -14,7 +14,7 @@ const ease = [0.22, 1, 0.36, 1]
 const icons = {
   '/about': Info, '/about#vision': Eye, '/about#mission': Target,
   '/affiliated#vwsea': Building2, '/affiliated#apresa': HeartHandshake,
-  '/services': Briefcase, '/services#rti': ShieldCheck,
+  '/services': Briefcase, '/services#rti': ShieldCheck, '/grievance': AlertCircle,
 }
 
 /* ---------- Top bar: news ticker + contact, login, language ---------- */

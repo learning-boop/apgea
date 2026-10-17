@@ -6,7 +6,22 @@ import Footer from './components/Footer'
 import WhatsAppFab from './components/WhatsAppFab'
 import Intro from './components/Intro'
 import Home from './pages/Home'
-import Page from './pages/Page'
+import About from './pages/About'
+import Bearers from './pages/Bearers'
+import Affiliated from './pages/Affiliated'
+import Activities from './pages/Activities'
+import Services from './pages/Services'
+import Gallery from './pages/Gallery'
+import Downloads from './pages/Downloads'
+import Weblinks from './pages/Weblinks'
+import News from './pages/News'
+import Article from './pages/Article'
+import Enroll from './pages/Enroll'
+import Grievance from './pages/Grievance'
+import Suggestions from './pages/Suggestions'
+import Login from './pages/Login'
+import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
@@ -20,21 +35,22 @@ function ScrollToTop() {
   return null
 }
 
-const inner = [
-  ['/about', 'pg.about'],
-  ['/office-bearers', 'pg.bearers'],
-  ['/weblinks', 'pg.weblinks'],
-  ['/affiliated', 'pg.affiliated'],
-  ['/activities', 'pg.activities'],
-  ['/services', 'pg.services'],
-  ['/gallery', 'pg.gallery'],
-  ['/downloads', 'pg.downloads'],
-  ['/news', 'pg.news'],
-  ['/news/:id', 'pg.news'],
-  ['/enroll', 'pg.enroll'],
-  ['/login', 'pg.login'],
-  ['/suggestions', 'pg.suggestions'],
-  ['/contact', 'pg.contact'],
+const pages = [
+  ['/about', About],
+  ['/office-bearers', Bearers],
+  ['/affiliated', Affiliated],
+  ['/activities', Activities],
+  ['/services', Services],
+  ['/gallery', Gallery],
+  ['/downloads', Downloads],
+  ['/weblinks', Weblinks],
+  ['/news', News],
+  ['/news/:id', Article],
+  ['/enroll', Enroll],
+  ['/grievance', Grievance],
+  ['/suggestions', Suggestions],
+  ['/login', Login],
+  ['/contact', Contact],
 ]
 
 export default function App() {
@@ -46,10 +62,8 @@ export default function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          {inner.map(([path, key]) => (
-            <Route key={path} path={path} element={<Page titleKey={key} />} />
-          ))}
-          <Route path="*" element={<Page titleKey="pg.notFound" />} />
+          {pages.map(([path, C]) => <Route key={path} path={path} element={<C />} />)}
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
         <WhatsAppFab />

@@ -11,7 +11,7 @@ const quick = [
   ['ft.downloads', '/downloads'], ['ft.gallery', '/gallery'], ['ft.contact', '/contact'],
 ]
 const services = [
-  ['ft.enroll', '/enroll'], ['ft.login', '/login'], ['ft.rti', '/services#rti'],
+  ['ft.enroll', '/enroll'], ['pg.grievance', '/grievance'], ['ft.login', '/login'], ['ft.rti', '/services#rti'],
   ['ft.suggest', '/suggestions'], ['ft.weblinks', '/weblinks'],
 ]
 

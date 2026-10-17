@@ -59,7 +59,7 @@ export default function Story() {
             { icon: Target, h: t('about.mission'), body: tx(mission), to: '/about#mission', more: t('about.fullMission'), cls: 'vm__card--gold' },
           ].map(({ icon: Icon, h, body, to, more, cls }, i) => (
             <motion.article
-              key={h} className={`vm__card ${cls}`}
+              key={h} id={i === 0 ? 'vision' : 'mission'} className={`vm__card ${cls}`}
               initial={{ opacity: 0, y: 50, rotateX: 12 }} whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8, delay: i * 0.12, ease }}
             >

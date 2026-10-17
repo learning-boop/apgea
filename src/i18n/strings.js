@@ -1,3 +1,5 @@
+import { pageEn, pageTe } from './pageStrings'
+
 // UI strings. Add a key to both languages; missing Telugu keys fall back to English.
 
 const en = {
@@ -93,6 +95,7 @@ const en = {
 
   'pg.home': 'Home',
   'pg.notFound': 'Page not found',
+  'pg.grievance': 'Raise a grievance',
   'pg.about': 'About APGEA', 'pg.bearers': 'Office Bearers', 'pg.weblinks': 'Important Weblinks',
   'pg.affiliated': 'Affiliated Associations', 'pg.activities': 'Activities', 'pg.services': 'Employees Services',
   'pg.gallery': 'Gallery', 'pg.downloads': 'Downloads', 'pg.news': 'News & GOs', 'pg.enroll': 'Enroll as a Member',
@@ -258,6 +261,7 @@ const te = {
 
   'pg.home': 'హోమ్',
   'pg.notFound': 'పేజీ కనబడలేదు',
+  'pg.grievance': 'ఫిర్యాదు చేయండి',
   'pg.about': 'APGEA గురించి', 'pg.bearers': 'కార్యవర్గం', 'pg.weblinks': 'ముఖ్యమైన లింకులు',
   'pg.affiliated': 'అనుబంధ సంఘాలు', 'pg.activities': 'కార్యక్రమాలు', 'pg.services': 'ఉద్యోగుల సేవలు',
   'pg.gallery': 'గ్యాలరీ', 'pg.downloads': 'డౌన్‌లోడ్స్', 'pg.news': 'వార్తలు & జీవోలు', 'pg.enroll': 'సభ్యత్వం కోసం దరఖాస్తు',
@@ -330,4 +334,4 @@ const te = {
   'wa.label': 'వాట్సాప్‌లో APGEA తో మాట్లాడండి',
 }
 
-export const strings = { en, te }
+export const strings = { en: { ...en, ...pageEn }, te: { ...te, ...pageTe } }

@@ -46,6 +46,7 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.2; }
 p { margin: 0; }
 ul, ol { margin: 0; padding: 0; list-style: none; }
 address { font-style: normal; }
+[id] { scroll-margin-top: 100px; } /* anchors clear the sticky nav */
 :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 
 .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
